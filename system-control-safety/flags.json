@@ -1,0 +1,103 @@
+{
+  "core.orchestrator.enabled": {
+    "key": "core.orchestrator.enabled",
+    "enabled": true,
+    "flag_type": "operational",
+    "scope": "global",
+    "description": "Master kill switch for core orchestrator",
+    "rollout_percentage": null,
+    "variants": null,
+    "created_at": "2025-12-18T14:47:42.045073",
+    "updated_at": "2025-12-18T14:52:01.864933",
+    "created_by": "system",
+    "requires_approval": false,
+    "is_emergency_kill": true
+  },
+  "agents.web_search.enabled": {
+    "key": "agents.web_search.enabled",
+    "enabled": true,
+    "flag_type": "boolean",
+    "scope": "agent",
+    "description": "Enable web search agent",
+    "rollout_percentage": null,
+    "variants": null,
+    "created_at": "2025-12-18T14:47:42.045092",
+    "updated_at": "2025-12-18T14:52:01.864987",
+    "created_by": "system",
+    "requires_approval": false,
+    "is_emergency_kill": false
+  },
+  "agents.code_execution.enabled": {
+    "key": "agents.code_execution.enabled",
+    "enabled": false,
+    "flag_type": "boolean",
+    "scope": "agent",
+    "description": "Enable code execution agent (HIGH RISK)",
+    "rollout_percentage": null,
+    "variants": null,
+    "created_at": "2025-12-18T14:47:42.045098",
+    "updated_at": "2025-12-18T14:52:01.866482",
+    "created_by": "system",
+    "requires_approval": true,
+    "is_emergency_kill": false
+  },
+  "memory.long_term.enabled": {
+    "key": "memory.long_term.enabled",
+    "enabled": true,
+    "flag_type": "boolean",
+    "scope": "global",
+    "description": "Enable long-term memory storage",
+    "rollout_percentage": null,
+    "variants": null,
+    "created_at": "2025-12-18T14:47:42.045102",
+    "updated_at": "2025-12-18T14:52:01.865008",
+    "created_by": "system",
+    "requires_approval": false,
+    "is_emergency_kill": false
+  },
+  "features.proactive_suggestions": {
+    "key": "features.proactive_suggestions",
+    "enabled": false,
+    "flag_type": "percentage",
+    "scope": "user",
+    "description": "Proactive task suggestions (gradual rollout)",
+    "rollout_percentage": 10,
+    "variants": null,
+    "created_at": "2025-12-18T14:47:42.045108",
+    "updated_at": "2025-12-18T14:52:01.865015",
+    "created_by": "system",
+    "requires_approval": false,
+    "is_emergency_kill": false
+  },
+  "model.provider": {
+    "key": "model.provider",
+    "enabled": true,
+    "flag_type": "multivariate",
+    "scope": "global",
+    "description": "LLM provider A/B test",
+    "rollout_percentage": null,
+    "variants": {
+      "anthropic": 0.8,
+      "openai": 0.2
+    },
+    "created_at": "2025-12-18T14:47:42.045112",
+    "updated_at": "2025-12-18T14:52:01.865023",
+    "created_by": "system",
+    "requires_approval": false,
+    "is_emergency_kill": false
+  },
+  "safety.content_filtering": {
+    "key": "safety.content_filtering",
+    "enabled": true,
+    "flag_type": "operational",
+    "scope": "global",
+    "description": "Content safety filtering (DO NOT DISABLE)",
+    "rollout_percentage": null,
+    "variants": null,
+    "created_at": "2025-12-18T14:47:42.045117",
+    "updated_at": "2025-12-18T14:52:01.865031",
+    "created_by": "system",
+    "requires_approval": true,
+    "is_emergency_kill": false
+  }
+}

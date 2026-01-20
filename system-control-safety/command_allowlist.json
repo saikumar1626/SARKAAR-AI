@@ -1,0 +1,138 @@
+{
+  "ls": {
+    "pattern": "ls",
+    "category": "file_read",
+    "permission": "always_allow",
+    "description": "List directory contents",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "pwd": {
+    "pattern": "pwd",
+    "category": "system_info",
+    "permission": "always_allow",
+    "description": "Print working directory",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "cat": {
+    "pattern": "cat",
+    "category": "file_read",
+    "permission": "ask_once",
+    "description": "Read file contents",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "head": {
+    "pattern": "head",
+    "category": "file_read",
+    "permission": "always_allow",
+    "description": "Show file start",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "tail": {
+    "pattern": "tail",
+    "category": "file_read",
+    "permission": "always_allow",
+    "description": "Show file end",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "date": {
+    "pattern": "date",
+    "category": "system_info",
+    "permission": "always_allow",
+    "description": "Show date/time",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "whoami": {
+    "pattern": "whoami",
+    "category": "system_info",
+    "permission": "always_allow",
+    "description": "Show current user",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "uname": {
+    "pattern": "uname",
+    "category": "system_info",
+    "permission": "always_allow",
+    "description": "System information",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "mkdir": {
+    "pattern": "mkdir",
+    "category": "file_write",
+    "permission": "ask_once",
+    "description": "Create directory",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "touch": {
+    "pattern": "touch",
+    "category": "file_write",
+    "permission": "ask_once",
+    "description": "Create file",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "cp": {
+    "pattern": "cp",
+    "category": "file_write",
+    "permission": "ask_always",
+    "description": "Copy files",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "mv": {
+    "pattern": "mv",
+    "category": "file_write",
+    "permission": "ask_always",
+    "description": "Move/rename files",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "rm": {
+    "pattern": "rm",
+    "category": "file_delete",
+    "permission": "ask_always",
+    "description": "Delete files",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "sudo": {
+    "pattern": "sudo",
+    "category": "process",
+    "permission": "never_allow",
+    "description": "Superuser access",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "chmod": {
+    "pattern": "chmod",
+    "category": "file_write",
+    "permission": "ask_always",
+    "description": "Change permissions",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "curl": {
+    "pattern": "curl",
+    "category": "network",
+    "permission": "ask_always",
+    "description": "Network request",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  },
+  "wget": {
+    "pattern": "wget",
+    "category": "network",
+    "permission": "ask_always",
+    "description": "Download file",
+    "max_execution_time": 30,
+    "allow_sudo": false
+  }
+}
