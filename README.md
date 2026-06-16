@@ -1,6 +1,24 @@
-# 🤖 Advanced AI Coding Assistant
+<div align="center">
 
-A sophisticated, production-ready coding assistant that analyzes, debugs, explains, optimizes, and generates code. Built with a modular agent architecture integrated through a central CORE orchestration system.
+# 🤖 SARKAAR-AI
+
+**JARVIS-Inspired Modular AI System**
+
+*Automation · Vision · Voice · Safety Agents*
+
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![AI](https://img.shields.io/badge/AI-Modular_Agents-blueviolet?style=flat-square)
+![Vision](https://img.shields.io/badge/Vision-Understanding-orange?style=flat-square)
+![Voice](https://img.shields.io/badge/Voice-Interaction-blue?style=flat-square)
+![DevSecOps](https://img.shields.io/badge/Safety-Guardrails-red?style=flat-square)
+
+> A sophisticated, production-ready modular AI system with automation, vision, voice, and safety agents — orchestrated through a central CORE system. Built as the evolution of AstraOps.
+
+</div>
+
+---
 
 ## 📋 Table of Contents
 
@@ -18,7 +36,7 @@ A sophisticated, production-ready coding assistant that analyzes, debugs, explai
 
 ## ✨ Features
 
-### 🔍 **Code Analysis**
+### 🔍 Code Analysis
 - AST-based code parsing
 - Complexity metrics (cyclomatic, cognitive)
 - Code quality scoring
@@ -26,35 +44,35 @@ A sophisticated, production-ready coding assistant that analyzes, debugs, explai
 - Performance issue identification
 - Best practices checking
 
-### 🐛 **Intelligent Debugging**
+### 🐛 Intelligent Debugging
 - Syntax error detection
 - Runtime error prediction
 - Logic error identification
 - Automatic fix suggestions
 - Context-aware explanations
 
-### 💡 **Code Generation**
+### 💡 Code Generation
 - Natural language to code
 - Template-based generation
 - Algorithm implementations
 - API client scaffolding
 - Data processing pipelines
 
-### ⚡ **Performance Optimization**
+### ⚡ Performance Optimization
 - Loop optimization
 - Data structure recommendations
 - String operation improvements
 - Function call optimization
 - Memory usage analysis
 
-### 📖 **Code Explanation**
+### 📖 Code Explanation
 - Line-by-line breakdown
 - Concept identification
 - Complexity analysis
 - Purpose inference
 - Step-by-step walkthrough
 
-### 🎯 **DSA Problem Solver**
+### 🎯 DSA Problem Solver
 - Common algorithm patterns
 - Data structure implementations
 - Complexity analysis
@@ -66,75 +84,48 @@ A sophisticated, production-ready coding assistant that analyzes, debugs, explai
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                        CORE SYSTEM                          │
-│  ┌───────────────────────────────────────────────────────┐  │
-│  │            Request Router & Orchestrator              │  │
-│  └───────────────────────────────────────────────────────┘  │
-│                            │                                │
-│              ┌─────────────┼─────────────┐                  │
-│              ▼             ▼             ▼                  │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐      │
-│  │   Memory &   │  │   Intent     │  │   Agent      │      │
-│  │   Context    │  │   Router     │  │   Coordinator│      │
-│  └──────────────┘  └──────────────┘  └──────────────┘      │
-└─────────────────────────────────────────────────────────────┘
-                            ↓
-        ┌───────────────────┼───────────────────┐
-        ▼                   ▼                   ▼
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│    Code      │    │    Debug     │    │     Code     │
-│   Analysis   │    │    Agent     │    │  Generation  │
-│    Agent     │    │              │    │    Agent     │
-└──────────────┘    └──────────────┘    └──────────────┘
-        ▼                   ▼                   ▼
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│ Optimization │    │ Explanation  │    │     DSA      │
-│    Agent     │    │    Agent     │    │    Solver    │
-└──────────────┘    └──────────────┘    └──────────────┘
+                    CORE SYSTEM
+            Request Router & Orchestrator
+                         |
+        ┌────────────────┼────────────────┐
+        │                │                │
+  Memory &         Intent Router    Agent Coordinator
+  Context                │
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+  Code Analysis    Debug Agent    Code Generation
+     Agent                              Agent
+        │                │                │
+  Optimization    Explanation        DSA Solver
+     Agent           Agent
 ```
 
 ### Key Components
 
-1. **CORE System**: Central orchestrator managing all operations
-2. **Memory Store**: Maintains context and conversation history
-3. **Intent Router**: Routes requests to appropriate agents
-4. **Agent Coordinator**: Manages multi-agent workflows
-5. **Specialized Agents**: Domain-specific processing units
+1. **CORE System** — Central orchestrator managing all operations
+2. **Memory Store** — Maintains context and conversation history
+3. **Intent Router** — Routes requests to appropriate agents
+4. **Agent Coordinator** — Manages multi-agent workflows
+5. **Specialized Agents** — Domain-specific processing units
 
 ---
 
 ## 🚀 Installation
 
 ### Prerequisites
+- Python 3.10+
+- Windows 11 (or any OS with Python support)
+- pip package manager
 
-- **Python 3.10+**
-- **Windows 11** (or any OS with Python support)
-- **pip** package manager
-
-### Step 1: Clone or Download Files
-
-Save all the Python files to a directory:
-
-```
-coding-assistant/
-├── core.py
-├── code_analysis_agent.py
-├── debug_agent.py
-├── code_generation_agent.py
-├── optimization_agent.py
-├── explanation_agent.py
-├── dsa_solver_agent.py
-├── main.py
-├── README.md
-└── requirements.txt
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/saikumar1626/SARKAAR-AI.git
+cd SARKAAR-AI
 ```
 
 ### Step 2: Install Dependencies
-
-Create a `requirements.txt` file:
-
-```txt
+```bash
 # No external dependencies required!
 # The system uses only Python standard library
 ```
@@ -142,19 +133,15 @@ Create a `requirements.txt` file:
 All agents use only Python's standard library (ast, re, logging, etc.), making it lightweight and portable.
 
 ### Step 3: Verify Installation
-
 ```bash
 python main.py
 ```
-
-This will run the demonstration showing all features.
 
 ---
 
 ## ⚡ Quick Start
 
 ### Basic Usage
-
 ```python
 import asyncio
 from main import CodingAssistant
@@ -162,15 +149,15 @@ from main import CodingAssistant
 async def main():
     # Initialize assistant
     assistant = CodingAssistant()
-    
+
     # Analyze code
     code = """
-    def factorial(n):
-        if n <= 1:
-            return 1
-        return n * factorial(n-1)
+def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n-1)
     """
-    
+
     result = await assistant.analyze_code(code, language="python")
     print(result['data']['insights'])
 
@@ -178,54 +165,6 @@ asyncio.run(main())
 ```
 
 ### Command Line Interface
-
-Create a simple CLI (`cli.py`):
-
-```python
-import asyncio
-import sys
-from main import CodingAssistant
-
-async def main():
-    if len(sys.argv) < 3:
-        print("Usage: python cli.py <command> <file_path>")
-        print("Commands: analyze, debug, explain, optimize")
-        return
-    
-    command = sys.argv[1]
-    file_path = sys.argv[2]
-    
-    # Read code from file
-    with open(file_path, 'r') as f:
-        code = f.read()
-    
-    # Initialize assistant
-    assistant = CodingAssistant()
-    
-    # Execute command
-    if command == "analyze":
-        result = await assistant.analyze_code(code)
-    elif command == "debug":
-        result = await assistant.debug_code(code)
-    elif command == "explain":
-        result = await assistant.explain_code(code)
-    elif command == "optimize":
-        result = await assistant.optimize_code(code)
-    else:
-        print(f"Unknown command: {command}")
-        return
-    
-    # Print results
-    if result['success']:
-        print(result['data'])
-    else:
-        print(f"Error: {result['error']}")
-
-if __name__ == "__main__":
-    asyncio.run(main())
-```
-
-Usage:
 ```bash
 python cli.py analyze my_code.py
 python cli.py debug buggy_code.py
@@ -234,87 +173,61 @@ python cli.py explain algorithm.py
 
 ---
 
-## 📚 Usage Examples
+## 💡 Usage Examples
 
 ### Example 1: Comprehensive Code Review
-
 ```python
 async def code_review_example():
     assistant = CodingAssistant()
-    
     code = """
-    def process_data(items):
-        result = []
-        for item in items:
-            if item > 0:
-                result.append(item * 2)
-        return result
+def process_data(items):
+    result = []
+    for item in items:
+        if item > 0:
+            result.append(item * 2)
+    return result
     """
-    
-    # Run comprehensive review
     review = await assistant.comprehensive_review(code)
-    
     print("Analysis:", review['data']['code_analysis'])
     print("Debug Report:", review['data']['debug'])
     print("Optimizations:", review['data']['optimize'])
 ```
 
 ### Example 2: Generate and Test Code
-
 ```python
 async def generate_and_test():
     assistant = CodingAssistant()
-    
-    # Generate code
     result = await assistant.generate_code(
         "Create a function to calculate the nth Fibonacci number"
     )
-    
     generated_code = result['data']['generated_code']
-    print("Generated Code:")
-    print(generated_code)
-    
-    # Analyze generated code
     analysis = await assistant.analyze_code(generated_code)
     print("\nCode Quality:", analysis['data']['analysis']['code_quality'])
 ```
 
 ### Example 3: Solve DSA Problem
-
 ```python
 async def solve_problem():
     assistant = CodingAssistant()
-    
     problem = "Implement a function to reverse a linked list"
-    
     solution = await assistant.solve_dsa_problem(problem)
-    
     print("Approach:", solution['data']['solution']['approach'])
     print("Time Complexity:", solution['data']['solution']['time_complexity'])
-    print("\nCode:")
-    print(solution['data']['solution']['code'])
 ```
 
 ### Example 4: Debug with Error Message
-
 ```python
 async def debug_with_error():
     assistant = CodingAssistant()
-    
     code = """
-    def divide(a, b):
-        return a / b
-    
-    result = divide(10, 0)
+def divide(a, b):
+    return a / b
+result = divide(10, 0)
     """
-    
     error = "ZeroDivisionError: division by zero at line 5"
-    
     result = await assistant.debug_code(code, error_message=error)
-    
     print("Debug Report:")
     print(result['data']['report'])
-    
     if result['data'].get('fixed_code'):
         print("\nFixed Code:")
         print(result['data']['fixed_code'])
@@ -322,86 +235,44 @@ async def debug_with_error():
 
 ---
 
-## 📖 API Reference
+## 📚 API Reference
 
 ### CodingAssistant Class
 
-#### `async analyze_code(code: str, language: str = "python") -> Dict`
+```python
+async analyze_code(code: str, language: str = "python") -> Dict
+```
 Analyze code quality, complexity, and issues.
 
-**Parameters:**
-- `code` (str): Source code to analyze
-- `language` (str): "python" or "java"
-
-**Returns:** Analysis results with metrics and insights
-
----
-
-#### `async debug_code(code: str, language: str = "python", error_message: Optional[str] = None) -> Dict`
+```python
+async debug_code(code: str, language: str = "python", error_message: Optional[str] = None) -> Dict
+```
 Debug code and suggest fixes.
 
-**Parameters:**
-- `code` (str): Code to debug
-- `language` (str): Programming language
-- `error_message` (str, optional): Error message if available
-
-**Returns:** Debug analysis with bug reports and fixes
-
----
-
-#### `async generate_code(description: str, language: str = "python") -> Dict`
+```python
+async generate_code(description: str, language: str = "python") -> Dict
+```
 Generate code from description.
 
-**Parameters:**
-- `description` (str): Natural language description
-- `language` (str): Target language
-
-**Returns:** Generated code with metadata
-
----
-
-#### `async optimize_code(code: str, language: str = "python") -> Dict`
+```python
+async optimize_code(code: str, language: str = "python") -> Dict
+```
 Optimize code for performance.
 
-**Parameters:**
-- `code` (str): Code to optimize
-- `language` (str): Programming language
+```python
+async explain_code(code: str, language: str = "python", detail_level: str = "medium") -> Dict
+```
+Explain what code does. `detail_level`: "low", "medium", or "high"
 
-**Returns:** Optimization suggestions
+```python
+async solve_dsa_problem(problem: str, language: str = "python") -> Dict
+```
+Solve DSA problem with complexity analysis.
 
----
-
-#### `async explain_code(code: str, language: str = "python", detail_level: str = "medium") -> Dict`
-Explain what code does.
-
-**Parameters:**
-- `code` (str): Code to explain
-- `language` (str): Programming language
-- `detail_level` (str): "low", "medium", or "high"
-
-**Returns:** Comprehensive explanation
-
----
-
-#### `async solve_dsa_problem(problem: str, language: str = "python") -> Dict`
-Solve DSA problem.
-
-**Parameters:**
-- `problem` (str): Problem statement
-- `language` (str): Target language
-
-**Returns:** Solution with complexity analysis
-
----
-
-#### `async comprehensive_review(code: str, language: str = "python") -> Dict`
+```python
+async comprehensive_review(code: str, language: str = "python") -> Dict
+```
 Complete code review (analysis + debug + optimization).
-
-**Parameters:**
-- `code` (str): Code to review
-- `language` (str): Programming language
-
-**Returns:** Complete review results
 
 ---
 
@@ -409,139 +280,44 @@ Complete code review (analysis + debug + optimization).
 
 ### Creating a VS Code Extension
 
-To integrate with VS Code, create an extension that communicates with the coding assistant:
-
-1. **Create Extension Structure:**
-
-```
-vscode-coding-assistant/
-├── extension.js
-├── package.json
-└── server/
-    └── main.py (your coding assistant)
-```
-
-2. **Extension Code (`extension.js`):**
-
 ```javascript
 const vscode = require('vscode');
 const { spawn } = require('child_process');
 
 function activate(context) {
-    // Register command to analyze code
     let analyzeCmd = vscode.commands.registerCommand(
-        'coding-assistant.analyze', 
+        'coding-assistant.analyze',
         async () => {
             const editor = vscode.window.activeTextEditor;
             if (!editor) return;
-            
             const code = editor.document.getText();
             const result = await runPythonScript('analyze', code);
-            
             vscode.window.showInformationMessage(
                 `Code Quality: ${result.score}`
             );
         }
     );
-    
     context.subscriptions.push(analyzeCmd);
 }
-
-async function runPythonScript(command, code) {
-    return new Promise((resolve, reject) => {
-        const python = spawn('python', [
-            'server/cli.py', 
-            command
-        ]);
-        
-        python.stdin.write(code);
-        python.stdin.end();
-        
-        let output = '';
-        python.stdout.on('data', (data) => {
-            output += data.toString();
-        });
-        
-        python.on('close', () => {
-            resolve(JSON.parse(output));
-        });
-    });
-}
-
 module.exports = { activate };
-```
-
-3. **Package.json:**
-
-```json
-{
-  "name": "coding-assistant",
-  "displayName": "AI Coding Assistant",
-  "description": "Advanced AI-powered code analysis and generation",
-  "version": "1.0.0",
-  "engines": {
-    "vscode": "^1.60.0"
-  },
-  "activationEvents": [
-    "onCommand:coding-assistant.analyze"
-  ],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "coding-assistant.analyze",
-        "title": "Analyze Code"
-      },
-      {
-        "command": "coding-assistant.debug",
-        "title": "Debug Code"
-      },
-      {
-        "command": "coding-assistant.explain",
-        "title": "Explain Code"
-      }
-    ]
-  }
-}
 ```
 
 ---
 
 ## 🤖 Agent Details
 
-### Code Analysis Agent
-- **Purpose**: Comprehensive code quality analysis
-- **Features**: AST parsing, complexity metrics, security checks
-- **Output**: Quality score, metrics, recommendations
-
-### Debug Agent
-- **Purpose**: Error detection and fix suggestions
-- **Features**: Syntax/runtime/logic error detection
-- **Output**: Bug reports, fix suggestions, corrected code
-
-### Code Generation Agent
-- **Purpose**: Generate code from descriptions
-- **Features**: Template-based generation, algorithm implementations
-- **Output**: Generated code with documentation
-
-### Optimization Agent
-- **Purpose**: Performance improvement suggestions
-- **Features**: Loop optimization, data structure recommendations
-- **Output**: Optimization suggestions with impact analysis
-
-### Explanation Agent
-- **Purpose**: Explain code in simple terms
-- **Features**: Purpose inference, concept identification
-- **Output**: Multi-level explanations
-
-### DSA Solver Agent
-- **Purpose**: Solve algorithms and data structures problems
-- **Features**: Pattern matching, solution templates
-- **Output**: Complete solutions with complexity analysis
+| Agent | Purpose | Output |
+|---|---|---|
+| Code Analysis Agent | Comprehensive code quality analysis | Quality score, metrics, recommendations |
+| Debug Agent | Error detection and fix suggestions | Bug reports, fix suggestions, corrected code |
+| Code Generation Agent | Generate code from descriptions | Generated code with documentation |
+| Optimization Agent | Performance improvement suggestions | Optimization suggestions with impact analysis |
+| Explanation Agent | Explain code in simple terms | Multi-level explanations |
+| DSA Solver Agent | Solve algorithm and data structure problems | Complete solutions with complexity analysis |
 
 ---
 
-## 🎯 Roadmap
+## 🗺️ Roadmap
 
 - [ ] Web API with FastAPI
 - [ ] Real-time VS Code extension
@@ -552,25 +328,26 @@ module.exports = { activate };
 
 ---
 
-## 📄 License
-
-MIT License - feel free to use in your projects!
-
----
-
 ## 🤝 Contributing
 
 Contributions welcome! Please:
+
 1. Fork the repository
 2. Create a feature branch
 3. Submit a pull request
 
 ---
 
-## 📞 Support
+## 📄 License
 
-For issues and questions, please open an issue on GitHub.
+This project is licensed under the MIT License — see the [LICENSE](./LICENSE) file for details.
 
 ---
 
-**Built with ❤️ for developers**
+<div align="center">
+
+🤖 **SARKAAR-AI — Built with ❤️ for developers**
+
+*The evolution of intelligent development assistance.*
+
+</div>
